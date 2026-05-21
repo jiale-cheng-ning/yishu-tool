@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 5e3fcfe7f758a3610b1057105bafd7b6dd25afbb User <user@example.com> 1779027891 +0800	commit (initial): init: empty repo
+5e3fcfe7f758a3610b1057105bafd7b6dd25afbb a8468c86961f24d3694e62a5892f4fd6f3563018 User <user@example.com> 1779028051 +0800	commit: feat: add HTML skeleton and CSS design system
+a8468c86961f24d3694e62a5892f4fd6f3563018 b9bcfa2e9cbbb924a2063b2e855accc23922e5a1 User <user@example.com> 1779028350 +0800	commit: feat: add trigram and 64 hexagram data
+b9bcfa2e9cbbb924a2063b2e855accc23922e5a1 bc14451a7616654915c884a1bc29311adcc3bb28 User <user@example.com> 1779028615 +0800	commit: fix: correct 3-2 mapping, add missing hexagrams (2-3, 4-2, 4-4, 6-8)
+bc14451a7616654915c884a1bc29311adcc3bb28 3240f9aa36edab6142b975cc1df3fdc365fe863f User <user@example.com> 1779028709 +0800	commit: feat: add ganzi and meihua algorithm
+3240f9aa36edab6142b975cc1df3fdc365fe863f 494ea873b7f6bbc67e980843d6247af5f2c724f6 User <user@example.com> 1779028823 +0800	commit: feat: add SVG renderer and UI binding
+494ea873b7f6bbc67e980843d6247af5f2c724f6 7a2ab583fac2d9a47663f5623a74fc88ae7330fd User <user@example.com> 1779029071 +0800	commit: feat: add result rendering and animations
+7a2ab583fac2d9a47663f5623a74fc88ae7330fd af9b53d87d3ab3c090d7c328dfaaaab2efdfa159 User <user@example.com> 1779090379 +0800	commit: fix: pageResult.display must be 'block' to override CSS display:none
+af9b53d87d3ab3c090d7c328dfaaaab2efdfa159 504bf57cb8e23ff16b721c4aab636e767bc53a59 User <user@example.com> 1779091366 +0800	commit: feat: restructure result page with 3 independent hexagram blocks + summary
+504bf57cb8e23ff16b721c4aab636e767bc53a59 bfcb1a412555ee16e2e904826af7831f21bc5ecf User <user@example.com> 1779091412 +0800	commit: chore: clean placeholder text from result page
+bfcb1a412555ee16e2e904826af7831f21bc5ecf a379042d8bd3548c6c7696bb618b5177888fd1c9 User <user@example.com> 1779091839 +0800	commit: fix: add missing lines property to huGua return in castHexagram
