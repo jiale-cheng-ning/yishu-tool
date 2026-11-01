@@ -1201,7 +1201,7 @@
 
           // 动爻
           let dongYao;
-          if (num3 !== null && num3 !== undefined && num3 > 0) {
+          if (num3 !== null && num3 !== undefined) {
             dongYao = num3 % 6;
             if (dongYao === 0) dongYao = 6;
           } else {
@@ -1407,17 +1407,23 @@
           }
         });
 
-        function handleCast() {
-          const num1 = parseInt(num1Input.value);
-          const num2 = parseInt(num2Input.value);
-          const num3 = num3Input.value ? parseInt(num3Input.value) : null;
-
-          if (!num1 || num1 < 1 || !num2 || num2 < 1) {
-            alert('请输入至少两个正整数');
-            return;
+        function parseCastNumber(value, optional = false) {
+          const text = value.trim();
+          if (optional && text === '') return null;
+          if (!/^\d{1,3}$/.test(text)) {
+            throw new Error('请输入 0–999 之间的整数，第三个数字可留空');
           }
-          if (num3 !== null && (isNaN(num3) || num3 < 1)) {
-            alert('第三个数字须为正整数');
+          return Number(text);
+        }
+
+        function handleCast() {
+          let num1, num2, num3;
+          try {
+            num1 = parseCastNumber(num1Input.value);
+            num2 = parseCastNumber(num2Input.value);
+            num3 = parseCastNumber(num3Input.value, true);
+          } catch (error) {
+            alert(error.message);
             return;
           }
 
